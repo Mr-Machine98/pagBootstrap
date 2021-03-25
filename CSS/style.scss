@@ -1,0 +1,100 @@
+// ESTO SIRVE PARA Y UTILIZAR LOS SASS
+// SIRVEN PARA PODER MODIFICAR DISEÑOS SIN NECESIDAD DE NAVEGAR POR 
+// TODOS LOS DOCUMENTOS
+// SOLO CAMBIANDO ALGUNA VARIABLE QUE MODIFIQUEMOS SE CAMBIA EN TODO LUGAR
+$moradito: #512DA8;
+
+/*
+#512DA8
+    trabajaremos con eñ mixin sirve para simplificar el code
+*/
+
+@mixin margenes($arriba, $abajo, $padding) {
+    margin-bottom: $abajo;
+    margin-top: $arriba;
+    padding: $padding;
+}
+
+.jumbotron {
+    background-color: $moradito;
+    margin-top: 50px;
+}
+
+#img1 {
+    width: 100%;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+body {
+    background-color: black;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+p {
+    margin-top: 2rem;
+    color: turquoise;
+}
+
+hr {
+    background-color: $moradito;
+}
+
+h3 {
+    margin-top: 3rem;
+    color: turquoise;
+}
+
+img {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+//EJEMPLO DE MIXIN CON EL FOOTER
+.footer {
+    background-color: $moradito;
+    @include margenes(10px, 0px, 10px 10px 0 10px);
+}
+
+h4 {
+    color: aliceblue;
+}
+
+h6 {
+    color: aliceblue;
+}
+
+.columnas {
+    flex: 150px;
+    margin-top: 10px;
+}
+
+.footer-iconos {
+    padding-right: 10px;
+}
+
+#check {
+    margin-top: 2.5rem;
+}
+
+.botones {
+    width: 100%;
+    border-radius: 0%;
+}
+
+.tab-content {
+    padding-top: 10px;
+}
+
+.img-fluid {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-top: 2rem;
+}

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
+    <title>Evaluación del proyecto - Módulo 1</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--
+                    El active sirve para que la palabra home se encienda como un bombillo
+                -->
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="entornos.html">Entornos</a></li>
+                <li class="nav-item"><a class="nav-link" href="ter_con.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>¡Aprendiendo a Programar!</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+
+        <!--
+            AQUÍ AGREGAMOS EL COLLAPSE
+        -->
+        <div class="row justify-content-md-center">
+
+            <div class="col-md-auto">
+                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#iniciar" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo iniciar?</button>
+            </div>
+
+            <div class="col-md-auto">
+                <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#tiempo" aria-expanded="false" aria-controls="multiCollapse2">¿Cúanto tiempo me demoraré
+                    aprendiendo?</button>
+            </div>
+
+            <div class="col-md-auto">
+                <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#importante" aria-expanded="false" aria-controls="multiCollapse3">¿Qué es lo importante?</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col collapse multi-collapse" id="iniciar">
+                <h2>¿Cómo Iniciar?</h2>
+                <p>Capacitandote aprendiendo conceptos.</p>
+            </div>
+            <div class="col collapse multi-collapse" id="tiempo">
+                <h2>¿Cúanto tiempo me demoraré aprendiendo?</h2>
+                <p>Lo importante es la práctica, cada persona tiene su ritmo de aprendizaje. Con el tiempo te daras cuenta del progreso que has tenido.</p>
+            </div>
+            <div class="col collapse multi-collapse" id="importante">
+                <h2>¿Qué es lo importante?</h2>
+                <p>Lo importante es desarrollar la lógica para que puedas adaptarte a cualquier lenguaje de programación, eso es lo que destaca de un buen programador.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+
+
+        <!--
+            AQUÍ METEMOS EL CARROUSEL
+        -->
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="IMG/codee.jpeg" class="img-fluid" alt="slide 1">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="IMG/imagen2.jpg" alt="slide 2">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="IMG/imagen3.png" alt="slide 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="IMG/imagen4jpg.jpg" alt="slide 4">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="IMG/imagen5.png" alt="slide 5">
+                </div>
+
+            </div>
+
+            <!--
+                Botones carrousel
+            -->
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+
+
+        </div>
+
+
+
+
+
+
+
+        <h2>Algunos Lenguajes De Programación</h2>
+        <div class="d-flex flex-wrap">
+
+            <div class="card text-white bg-dark columnas d-flex flex-column justify-content-between mr-3">
+                <div class="card-body">
+                    <h3 class="card-title" data-toggle="tooltip" data-placement="top" title="C# es orientado a objetos, y es estándar. Utiliza el framework .NET que aporta funciones para casi cualquier cosa.">
+                        C Sharp</h3>
+                    <img src="IMG/csharp.png" alt="c#">
+                    <p class="card-text">C# es un lenguaje elegante, con seguridad de tipos y orientado a objetos que permite a los desarrolladores crear una gran variedad de aplicaciones seguras y sólidas que se ejecutan en el ecosistema de .NET.</p>
+                    <button id="boton1" type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#mi_primer_modal">BOTON QUE ACTIVA EL MODAL Y CAMBIA COLOR</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info botones" data-toggle="popover" title="Lenguaje De Programación" data-content="Consulta a profundidad sobre este lenguaje de programación.">Info</button>
+                </div>
+            </div>
+
+            <div class="card text-white bg-dark columnas d-flex flex-column justify-content-between mr-3">
+                <div class="card-body">
+                    <h3 class="card-title" data-toggle="tooltip" data-placement="top" title="Java es un lenguaje de back-end, destinado a aplicaciones independientes (escritorio y Android). Se considera que es el idioma nativo de las aplicaciones de Android y tiene una gama mucho más amplia de opciones y funciones para elegir otros lenguajes cuando se trata de este tipo de implementación.">
+                        Java</h3>
+                    <img src="IMG/java.png" alt="java">
+                    <p class="card-text">Java es un lenguaje de programación orientado a objetos que se incorporó al ámbito de la informática en los años noventa. La idea de Java es que pueda realizarse programas con la posibilidad de ejecutarse en cualquier contexto, en
+                        cualquier ambiente, siendo así su portabilidad uno de sus principales logros.</p>
+
+
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#mi_primer_modal">Mas información contactanos</button>
+                </div>
+
+                <div>
+                    <button type="button" class="botones btn btn-info" data-toggle="popover" title="Lenguaje De Programación" data-content="Consulta a profundidad sobre este lenguaje de programación.">Info</button>
+                </div>
+
+            </div>
+
+            <div class="card text-white bg-dark mr-3 columnas d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h3 class="card-title" data-toggle="tooltip" data-placement="top" title="JavaScript es un lenguaje web, recomendado para aplicaciones y sitios web, es un lenguaje más «creativo» y, por lo tanto, está diseñado para el desarrollo front-end. Actualmente está en proceso de expansión, así que te recomendamos que lo explores.">
+                        JavaScript</h3>
+                    <img src="IMG/js.png" alt="java" data-toggle="tooltip" data-placement="top" title="JavaScript es un lenguaje web, recomendado para aplicaciones y sitios web, es un lenguaje más «creativo» y, por lo tanto, está diseñado para el desarrollo front-end. Actualmente está en proceso de expansión, así que te recomendamos que lo explores.">
+                    <p class="card-text">JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas. Una página web dinámica es aquella que incorpora efectos como texto que aparece y desaparece, animaciones, acciones que se activan
+                        al pulsar botones y ventanas con mensajes de aviso al usuario.</p>
+
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#mi_primer_modal">Mas información contactanos</button>
+                </div>
+                <div>
+                    <button type="button" class="botones btn btn-info" data-toggle="popover" title="Lenguaje De Programación" data-content="Consulta a profundidad sobre este lenguaje de programación.">Info</button>
+                </div>
+            </div>
+
+            <div class="card text-white bg-dark mr-3 columnas d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h3 class="card-title">PHP</h3>
+                    <img src="IMG/php.png" alt="java" data-toggle="tooltip" data-placement="top" title="PHP es un lenguaje de programación destinado a desarrollar aplicaciones para la web y crear páginas web, favoreciendo la conexión entre los servidores y la interfaz de usuario.">
+                    <p class="card-text">PHP es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web.​ Fue creado inicialmente por el programador danés-canadiense Rasmus Lerdorf en 1994.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#mi_primer_modal">Mas información contactanos</button>
+                </div>
+                <div>
+                    <button type="button" class="botones btn btn-info" data-toggle="popover" title="Lenguaje De Programación" data-content="Consulta a profundidad sobre este lenguaje de programación.">Info</button>
+                </div>
+            </div>
+
+
+
+
+            <!--
+                AQUI METAMOS EL MODAL
+            -->
+
+
+            <div class="card text-white bg-dark mr-3 columnas d-flex flex-column justify-content-between">
+                <div class="card-body">
+                    <h3 class="card-title">Python</h3>
+                    <img src="IMG/python.png" alt="java" data-toggle="tooltip" data-placement="top" title="Python es un lenguaje de escritura rápido, escalable, robusta y de código abierto, ventajas que hacen de Python un aliado perfecto para la Inteligencia Artificial.">
+                    <p class="card-text">Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta orientación a objetos, programación imperativa
+                        y, en menor medida, programación funcional.</p>
+
+
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#mi_primer_modal">Mas información contactanos</button>
+                </div>
+                <div>
+                    <button type="button" class="botones btn btn-info" data-toggle="popover" title="Lenguaje De Programación" data-content="Consulta a profundidad sobre este lenguaje de programación.">Info</button>
+                </div>
+            </div>
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="mi_primer_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">!Contactanos Parcero¡</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!--AQUI VA EL CONTENIDO QUE QUEREMOS MOSTRAR
+                            -->
+
+                            <form action="">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <small id="emailHelp" class="form-text text-muted">Nostros nunca compartiremos
+                                            tu email con otras personas.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mensaje</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column ">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google+</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h4>Oficina central</h4>
+                    <h6><span class="oi oi-home footer-iconos"></span> Torres De Comfandi Conjunto A, Calle 59 1c - 125
+                        Cali Colombia</h6>
+                    <h6><span class="oi oi-phone footer-iconos"></span>+59 3172780054</h6>
+                    <h6><span class="oi oi-inbox footer-iconos"></span>camiloruiz508@gmail.com</h6>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nostros</a>
+                <a href="http://www.twitter.com">Precios</a>
+                <a href="http://www.instagram.com">Contacto</a>
+                <a href="http://www.google.com">Terminos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--TOLLTIPS EN LOS TITULOS-->
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

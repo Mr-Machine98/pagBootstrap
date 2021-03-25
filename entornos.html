@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- build:css dist/entornos.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
+    <title>Evaluación del proyecto - Módulo 1</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Programación</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--
+                    El active sirve para que la palabra home se encienda como un bombillo
+                -->
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Entornos</a></li>
+                <li class="nav-item"><a class="nav-link" href="ter_con.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1>Entornos populares para el desarrollo de software</h1>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="about.html">Nosotros</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Entornos</li>
+            </ol>
+        </nav>
+
+        <!--AGREGAMOS LOS PILLS-->
+
+        <ul class="nav nav-pills" id="mi_tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="tiposEditor-tab" data-toggle="pill" href="#tiposEditor" role="tab" aria-controls="tiposEditor" aria-selected="true">Tabla De Editores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="opcionesEditor-tab" data-toggle="pill" href="#opcionesEditor" role="tab" aria-controls="opcionesEditor" aria-selected="false">Opciones De Editores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+            </li>
+
+        </ul>
+
+        <!--Para colocar el contenido en el nav  nuevo-->
+        <div class="tab-content" id="mi_tabContenido">
+
+            <div class="tab-pane fade show active" id="tiposEditor" role="tabpanel" aria-labelledby="tiposEditor-tab">
+
+                <div class="table-responsive">
+                    <table class="table table-dark">
+                        <thead class=" thead-dark ">
+                            <th>Popularidad</th>
+                            <th>RJ TextEd</th>
+                            <th>Light Table</th>
+                            <th>Netbeans</th>
+                            <th>Brackets</th>
+                            <th>Komodo Edit</th>
+                            <th>Atom by Github</th>
+                            <th>Visual Studio Code</th>
+                            <th>CODELOBSTER</th>
+                            <th>Eclipse</th>
+                            <th>Monodevelop</th>
+                            <th>BlueJ</th>
+                            <th>IntelliJ Idea</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>PHP, ASP, JavaScript, HTML, CSS</td>
+                                <td>Javascript, Clojure y Python</td>
+                                <td>Java, JavaScript, HTML5, PHP, C / C ++</td>
+                                <td>PHP, C, C++, Java, Python</td>
+                                <td>PHP, Python, Perl, Ruby, C++, HTML, Java, Javascript, Django, CSS, HTML</td>
+                                <td>HTML, CSS, Less, Sass, GitHub, C/C++, C#, Va, Java, Objetivo-C, Javascript, JSON, CoffeeScript, Python, PHP, Ruby, Shell Script, Clojure, Perl, Git, Property List(Apple), TOML, XML, YAML, Mustache, Julia & SQL</td>
+                                <td>C#, F# y Visual Basic, PHP, Phyton, Perl, SQL, HTML, CSS y JavaScript</td>
+                                <td>HTML, CSS, PHP y JavaScript</td>
+                                <td>Java, C, C++, JSP, perl, Python, Ruby y PHP</td>
+                                <td>All lenguage</td>
+                                <td>All lenguage</td>
+                                <td>JAVA , Node JS, PHP, Python, Ruby, Sass, TypeScript, AngularJS, CoffeeScript, CSS, HTML, JavaScript, LESS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="opcionesEditor" role="tabpanel" aria-labelledby="opcionesEditor-tab">
+
+                <div id="accordion">
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Community Edition
+                          </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body" style="background: black;">
+                                <p>Un completo IDE extensible y gratuito para crear aplicaciones modernas para Windows, Android e iOS, además de aplicaciones web y servicios en la nube.
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Prodessional Edition
+                          </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body" style="background: black;">
+                                <p>Un completo IDE extensible-pago para crear aplicaciones modernas para Windows, Android e iOS, además de aplicaciones web y servicios en la nube.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            EnterPrise Edition
+                          </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body" style="background: black;">
+                                <p>Un completo IDE extensible-pago para crear aplicaciones modernas para Windows, Android e iOS, además de aplicaciones web y servicios en la nube.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade show active" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                <p>Comentarios</p>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="row ">
+            <div class="col-sm-4 d-flex flex-column ">
+                <a href="http://www.facebook.com ">Facebook</a>
+                <a href="http://www.twitter.com ">Twitter</a>
+                <a href="http://www.instagram.com ">Instagram</a>
+                <a href="http://www.google.com ">Google+</a>
+            </div>
+            <div class="col-sm-4 ">
+                <address>
+                    <h4>Oficina central</h4>
+                    <h6><span class="oi oi-home footer-iconos "></span> Torres De Comfandi Conjunto A, Calle 59 1c - 125 Cali Colombia</h6>
+                    <h6><span class="oi oi-phone footer-iconos "></span>+59 3172780054</h6>
+                    <h6><span class="oi oi-inbox footer-iconos "></span>camiloruiz508@gmail.com</h6>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end ">
+                <a href="http://www.facebook.com ">Nostros</a>
+                <a href="http://www.twitter.com ">Precios</a>
+                <a href="http://www.instagram.com ">Contacto</a>
+                <a href="http://www.google.com ">Terminos y condiciones</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/entornos.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
